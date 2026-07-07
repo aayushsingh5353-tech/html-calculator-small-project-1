@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Pro</title>
+    <link rel="stylesheet" href="learn.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="card">
+        <h1>📚 Attendance Pro</h1>
+        <p class="subtitle">Smart Attendance Calculator</p>
+
+        <input type="number" id="total" placeholder="Total Classes">
+
+        <input type="number" id="attended" placeholder="Classes Attended">
+
+        <select id="target">
+            <option value="75">Target 75%</option>
+            <option value="80">Target 80%</option>
+            <option value="85">Target 85%</option>
+            <option value="90">Target 90%</option>
+        </select>
+
+        <button onclick="calculate()">Calculate Attendance</button>
+
+        <div class="circle">
+            <span id="percentage">0%</span>
+        </div>
+
+        <div class="result-box">
+            <p id="current"></p>
+            <p id="need"></p>
+            <p id="bunk"></p>
+        </div>
+    </div>
+</div>
+
+<script src="learn.js"></script>
+
+</body>
+</html>
